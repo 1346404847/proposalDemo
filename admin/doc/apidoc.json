@@ -1,0 +1,15 @@
+{
+    "name": "问题反馈系统接口",
+    "version": "0.1.1",
+    "description": "问题反馈系统提供接口",
+    "title": "提供游戏接口",
+    "url" : "https://apicustomer.topjoy.com/v1",
+    "footer": {
+        "title": "Token以及其他",
+        "filename": "footer.md"
+    },
+    "template": {
+        "withCompare": true,
+        "withGenerator": true
+    }
+}

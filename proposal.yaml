@@ -1,0 +1,6 @@
+mongo:
+  db_address: 10.3.185.79
+  db_user: siteRootAdmin
+  db_pass: mongodb_password
+  db_port: 31000
+  db_name: customer_service

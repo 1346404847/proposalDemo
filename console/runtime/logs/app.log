@@ -1,0 +1,245 @@
+2017-12-04 03:11:36 [-][-][-][error][yii\mongodb\Exception] exception 'MongoConnectionException' with message 'Failed to connect to: 127.0.0.1:27017: Connection refused' in /Users/server/project/customer/vendor/yiisoft/yii2-mongodb/Connection.php:253
+Stack trace:
+#0 /Users/server/project/customer/vendor/yiisoft/yii2-mongodb/Connection.php(253): MongoClient->__construct('mongodb://127.0...', Array, Array)
+#1 /Users/server/project/customer/vendor/yiisoft/yii2-mongodb/Connection.php(174): yii\mongodb\Connection->open()
+#2 /Users/server/project/customer/vendor/yiisoft/yii2-mongodb/Connection.php(140): yii\mongodb\Connection->selectDatabase('customer_servic...')
+#3 /Users/server/project/customer/vendor/yiisoft/yii2-mongodb/Connection.php(197): yii\mongodb\Connection->getDatabase()
+#4 /Users/server/project/customer/vendor/yiisoft/yii2-mongodb/Cache.php(112): yii\mongodb\Connection->getCollection('asset_cache')
+#5 /Users/server/project/customer/vendor/yiisoft/yii2/caching/Cache.php(235): yii\mongodb\Cache->setValue('8fe46ae13fde4c8...', 'a:2:{i:0;a:9:{s...', 0)
+#6 /Users/server/project/customer/console/controllers/AssetsController.php(27): yii\caching\Cache->set('game.1', Array)
+#7 /Users/server/project/customer/console/controllers/AssetsController.php(11): console\controllers\AssetsController->getGames()
+#8 [internal function]: console\controllers\AssetsController->actionIndex('dev_token')
+#9 /Users/server/project/customer/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Users/server/project/customer/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Users/server/project/customer/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('index', Array)
+#12 /Users/server/project/customer/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('index', Array)
+#13 /Users/server/project/customer/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('assets/index', Array)
+#14 /Users/server/project/customer/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('assets/index', Array)
+#15 /Users/server/project/customer/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#16 /Users/server/project/customer/yii(42): yii\base\Application->run()
+#17 {main}
+
+Next exception 'yii\mongodb\Exception' with message 'Failed to connect to: 127.0.0.1:27017: Connection refused' in /Users/server/project/customer/vendor/yiisoft/yii2-mongodb/Connection.php:258
+Stack trace:
+#0 /Users/server/project/customer/vendor/yiisoft/yii2-mongodb/Connection.php(174): yii\mongodb\Connection->open()
+#1 /Users/server/project/customer/vendor/yiisoft/yii2-mongodb/Connection.php(140): yii\mongodb\Connection->selectDatabase('customer_servic...')
+#2 /Users/server/project/customer/vendor/yiisoft/yii2-mongodb/Connection.php(197): yii\mongodb\Connection->getDatabase()
+#3 /Users/server/project/customer/vendor/yiisoft/yii2-mongodb/Cache.php(112): yii\mongodb\Connection->getCollection('asset_cache')
+#4 /Users/server/project/customer/vendor/yiisoft/yii2/caching/Cache.php(235): yii\mongodb\Cache->setValue('8fe46ae13fde4c8...', 'a:2:{i:0;a:9:{s...', 0)
+#5 /Users/server/project/customer/console/controllers/AssetsController.php(27): yii\caching\Cache->set('game.1', Array)
+#6 /Users/server/project/customer/console/controllers/AssetsController.php(11): console\controllers\AssetsController->getGames()
+#7 [internal function]: console\controllers\AssetsController->actionIndex('dev_token')
+#8 /Users/server/project/customer/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /Users/server/project/customer/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#10 /Users/server/project/customer/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('index', Array)
+#11 /Users/server/project/customer/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('index', Array)
+#12 /Users/server/project/customer/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('assets/index', Array)
+#13 /Users/server/project/customer/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('assets/index', Array)
+#14 /Users/server/project/customer/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#15 /Users/server/project/customer/yii(42): yii\base\Application->run()
+#16 {main}
+2017-12-04 03:11:36 [-][-][-][info][application] $_SERVER = [
+    'TERM_SESSION_ID' => 'w0t1p0:282B338E-A5B4-4B03-A9C0-AFF419C1E72F'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.QaUssglnDy/Listeners'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.pCD5W4LyHn/Render'
+    'COLORFGBG' => '7;0'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'LANG' => 'zh_CN.UTF-8'
+    'PWD' => '/Users/server/project/customer'
+    'SHELL' => '/bin/zsh'
+    'SECURITYSESSIONID' => '186a5'
+    'TERM_PROGRAM_VERSION' => '3.1.beta.9'
+    'TERM_PROGRAM' => 'iTerm.app'
+    'PATH' => '/Users/server/cocosjs/apache-ant-1.9.7/bin:/Users/server/cocosjs/android-ndk-r13b:/Users/server/cocosjs/cocos2d-x-3.13.1/templates:/Users/server/cocosjs:/Users/server/cocosjs/cocos2d-x-3.13.1/tools/cocos2d-console/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'COLORTERM' => 'truecolor'
+    'COMMAND_MODE' => 'unix2003'
+    'TERM' => 'xterm-256color'
+    'HOME' => '/Users/server'
+    'TMPDIR' => '/var/folders/9t/3661cs6n0_3b67f8ntcg99c80000gn/T/'
+    'USER' => 'server'
+    'XPC_SERVICE_NAME' => '0'
+    'LOGNAME' => 'server'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'ITERM_SESSION_ID' => 'w0t1p0:282B338E-A5B4-4B03-A9C0-AFF419C1E72F'
+    'SHLVL' => '1'
+    'OLDPWD' => '/Users/server/project'
+    'ZSH' => '/Users/server/.oh-my-zsh'
+    'PAGER' => 'less'
+    'LESS' => '-R'
+    'LC_CTYPE' => 'zh_CN.UTF-8'
+    'LSCOLORS' => 'Gxfxcxdxbxegedabagacad'
+    'COCOS_CONSOLE_ROOT' => '/Users/server/cocosjs/cocos2d-x-3.13.1/tools/cocos2d-console/bin'
+    'COCOS_X_ROOT' => '/Users/server/cocosjs'
+    'COCOS_TEMPLATES_ROOT' => '/Users/server/cocosjs/cocos2d-x-3.13.1/templates'
+    'NDK_ROOT' => '/Users/server/cocosjs/android-ndk-r13b'
+    'ANT_ROOT' => '/Users/server/cocosjs/apache-ant-1.9.7/bin'
+    '_' => '/Users/server/project/customer/./yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1512357096.6431
+    'REQUEST_TIME' => 1512357096
+    'argv' => [
+        0 => './yii'
+        1 => 'assets/index'
+        2 => 'dev_token'
+    ]
+    'argc' => 3
+]
+2018-03-23 08:02:23 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "asstes/index". in /data/home/user00/service/productions/customer_service/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/home/user00/service/productions/customer_service/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('asstes/index', Array)
+#1 /data/home/user00/service/productions/customer_service/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('asstes/index', Array)
+#2 /data/home/user00/service/productions/customer_service/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /data/home/user00/service/productions/customer_service/yii(42): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "asstes/index". in /data/home/user00/service/productions/customer_service/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /data/home/user00/service/productions/customer_service/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('asstes/index', Array)
+#1 /data/home/user00/service/productions/customer_service/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /data/home/user00/service/productions/customer_service/yii(42): yii\base\Application->run()
+#3 {main}
+2018-03-23 08:02:23 [-][-][-][info][application] $_SERVER = [
+    'LDFLAGS' => '-L/data/home/user00/service/usr/lib:-L/data/home/user00/service/usr/lib64:-L/data/home/user00/servoce/usr/zlib/lib:-L/data/home/user00/servoce/usr/expat/lib:-L/data/home/user00/servoce/usr/gdbm/lib:-L/data/home/user00/servoce/usr/readline/lib:-L/data/home/user00/service/usr/openssl/lib:-L/data/home/user00/service/usr/lua/lib:-L/data/home/user00/service/usr/otp/lib'
+    'XDG_SESSION_ID' => '22'
+    'HOSTNAME' => 'webtest1-dcae7350-e7b3-47fd-a833-e4770b197dbc.novalocal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'HISTSIZE' => '1000'
+    'CPPFLAGS' => '-I/data/home/user00/service/usr/include:-I/data/home/user00/service/usr/zlib/include:-I/data/home/user00/service/usr/openssl/include:-I/data/home/user00/service/usr/expat/include -I/data/home/user00/service/usr/include/zlib -I/data/home/user00/service/usr/include/libpng -I/data/home/user00/service/usr/include/bzip2 -I/data/home/user00/service/usr/include/harfbuzz -I/data/home/user00/service/usr/include/readline -I/data/home/user00/service/usr/include/expat -I/data/home/user00/service/usr/include/openssl -I/data/home/user00/service/usr/include/ncurses -I/data/home/user00/service/usr/include/gdbm -I/data/home/user00/service/usr/include/lua'
+    'OLDPWD' => '/home/user00/service/productions'
+    'USER' => 'user00'
+    'LD_LIBRARY_PATH' => '/usr/lib/:/usr/local/lib:/var/lib:/data/home/user00/service/usr/lib:/data/home/user00/service/usr/lib64:/data/home/user00/service/usr/openssl/lib:/data/home/user00/service/usr/expat/lib'
+    'LS_COLORS' => 'rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:'
+    'MAIL' => '/var/spool/mail/user00'
+    'PATH' => '/data/home/user00/service/usr/Python-2.7.13/bin:/data/home/user00/service/usr/jdk/bin/:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/user00/.local/bin:/home/user00/bin:/home/user00/service/usr/bin/bzip2:/home/user00/service/usr/bin/unzip:/home/user00/service/usr/bin/haproxy:/home/user00/service/usr/bin/go:/home/user00/service/usr/bin/cmake:/home/user00/service/usr/bin/lua:/home/user00/service/usr/bin/otp:/home/user00/service/usr/bin/php:/home/user00/service/usr/bin/re2c/:/home/user00/service/usr/bin/rsync:/home/user00/service/usr/bin/mongodb:/home/user00/service/usr/bin/mysql:/home/user00/.local/bin:/home/user00/bin'
+    'PWD' => '/home/user00/service/productions/customer_service'
+    'LANG' => 'en_US.UTF-8'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/home/user00'
+    'LOGNAME' => 'user00'
+    'LIBFFI_LIBS' => '-L/data/home/user00/service/usr/libffi-3.2.1/lib -lffi'
+    'PKG_CONFIG_PATH' => '/data/home/user00/service/usr/lib/pkgconfig'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'LIBFFI_CFLAGS' => '-I/data/home/user00/service/usr/libffi-3.2.1/lib/libffi-3.2.1/include'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1521792143.4037
+    'REQUEST_TIME' => 1521792143
+    'argv' => [
+        0 => './yii'
+        1 => 'asstes/index'
+        2 => 'dev_token'
+    ]
+    'argc' => 3
+]
+2018-03-23 08:08:47 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "asstes/index". in /data/home/user00/service/productions/customer_service/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /data/home/user00/service/productions/customer_service/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('asstes/index', Array)
+#1 /data/home/user00/service/productions/customer_service/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('asstes/index', Array)
+#2 /data/home/user00/service/productions/customer_service/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /data/home/user00/service/productions/customer_service/yii(42): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "asstes/index". in /data/home/user00/service/productions/customer_service/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /data/home/user00/service/productions/customer_service/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('asstes/index', Array)
+#1 /data/home/user00/service/productions/customer_service/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /data/home/user00/service/productions/customer_service/yii(42): yii\base\Application->run()
+#3 {main}
+2018-03-23 08:08:47 [-][-][-][info][application] $_SERVER = [
+    'LDFLAGS' => '-L/data/home/user00/service/usr/lib:-L/data/home/user00/service/usr/lib64:-L/data/home/user00/servoce/usr/zlib/lib:-L/data/home/user00/servoce/usr/expat/lib:-L/data/home/user00/servoce/usr/gdbm/lib:-L/data/home/user00/servoce/usr/readline/lib:-L/data/home/user00/service/usr/openssl/lib:-L/data/home/user00/service/usr/lua/lib:-L/data/home/user00/service/usr/otp/lib'
+    'XDG_SESSION_ID' => '22'
+    'HOSTNAME' => 'webtest1-dcae7350-e7b3-47fd-a833-e4770b197dbc.novalocal'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'HISTSIZE' => '1000'
+    'CPPFLAGS' => '-I/data/home/user00/service/usr/include:-I/data/home/user00/service/usr/zlib/include:-I/data/home/user00/service/usr/openssl/include:-I/data/home/user00/service/usr/expat/include -I/data/home/user00/service/usr/include/zlib -I/data/home/user00/service/usr/include/libpng -I/data/home/user00/service/usr/include/bzip2 -I/data/home/user00/service/usr/include/harfbuzz -I/data/home/user00/service/usr/include/readline -I/data/home/user00/service/usr/include/expat -I/data/home/user00/service/usr/include/openssl -I/data/home/user00/service/usr/include/ncurses -I/data/home/user00/service/usr/include/gdbm -I/data/home/user00/service/usr/include/lua'
+    'OLDPWD' => '/home/user00/service/productions'
+    'USER' => 'user00'
+    'LD_LIBRARY_PATH' => '/usr/lib/:/usr/local/lib:/var/lib:/data/home/user00/service/usr/lib:/data/home/user00/service/usr/lib64:/data/home/user00/service/usr/openssl/lib:/data/home/user00/service/usr/expat/lib'
+    'LS_COLORS' => 'rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:'
+    'MAIL' => '/var/spool/mail/user00'
+    'PATH' => '/data/home/user00/service/usr/Python-2.7.13/bin:/data/home/user00/service/usr/jdk/bin/:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/user00/.local/bin:/home/user00/bin:/home/user00/service/usr/bin/bzip2:/home/user00/service/usr/bin/unzip:/home/user00/service/usr/bin/haproxy:/home/user00/service/usr/bin/go:/home/user00/service/usr/bin/cmake:/home/user00/service/usr/bin/lua:/home/user00/service/usr/bin/otp:/home/user00/service/usr/bin/php:/home/user00/service/usr/bin/re2c/:/home/user00/service/usr/bin/rsync:/home/user00/service/usr/bin/mongodb:/home/user00/service/usr/bin/mysql:/home/user00/.local/bin:/home/user00/bin'
+    'PWD' => '/home/user00/service/productions/customer_service'
+    'LANG' => 'en_US.UTF-8'
+    'HISTCONTROL' => 'ignoredups'
+    'SHLVL' => '1'
+    'HOME' => '/home/user00'
+    'LOGNAME' => 'user00'
+    'LIBFFI_LIBS' => '-L/data/home/user00/service/usr/libffi-3.2.1/lib -lffi'
+    'PKG_CONFIG_PATH' => '/data/home/user00/service/usr/lib/pkgconfig'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'LIBFFI_CFLAGS' => '-I/data/home/user00/service/usr/libffi-3.2.1/lib/libffi-3.2.1/include'
+    '_' => './yii'
+    'PHP_SELF' => './yii'
+    'SCRIPT_NAME' => './yii'
+    'SCRIPT_FILENAME' => './yii'
+    'PATH_TRANSLATED' => './yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1521792527.9063
+    'REQUEST_TIME' => 1521792527
+    'argv' => [
+        0 => './yii'
+        1 => 'asstes/index'
+        2 => 'dev_token'
+    ]
+    'argc' => 3
+]
+2018-05-15 02:41:39 [-][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'MongoDB\BSON\ObjectID' not found' in /Users/alina/project/proposal/vendor/yiisoft/yii2-mongodb/QueryBuilder.php:575
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-05-15 02:41:39 [-][-][-][info][application] $_SERVER = [
+    'TERM_PROGRAM' => 'iTerm.app'
+    'SHELL' => '/bin/bash'
+    'TERM' => 'xterm-256color'
+    'CLICOLOR' => '1'
+    'TMPDIR' => '/var/folders/2w/x6s9vg7n2pl3bkdxs2j9n8xh0000gn/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.qQW2a62td3/Render'
+    'TERM_PROGRAM_VERSION' => '3.1.5'
+    'TERM_SESSION_ID' => 'w0t1p0:611CA260-4CDA-466A-BCE5-46518EB1E874'
+    'USER' => 'alina'
+    'COMMAND_MODE' => 'unix2003'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.RKcjijSLPg/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F5:0x19:0x34'
+    'PATH' => '/usr/local/opt/mysql@5.6/bin:/usr/local/Cellar/mongodb/3.6.4/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin/brew:/Users/alina/maven/apache-maven-3.5.3/bin'
+    '_' => '/Users/alina/project/proposal/yii'
+    'PWD' => '/Users/alina/project'
+    'LANG' => 'zh_CN.UTF-8'
+    'ITERM_PROFILE' => 'Default'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'COLORFGBG' => '7;0'
+    'HOME' => '/Users/alina'
+    'SHLVL' => '2'
+    'M2_HOME' => '/Users/alina/maven/apache-maven-3.5.3'
+    'ITERM_SESSION_ID' => 'w0t1p0:611CA260-4CDA-466A-BCE5-46518EB1E874'
+    'LOGNAME' => 'alina'
+    'SECURITYSESSIONID' => '186a7'
+    'COLORTERM' => 'truecolor'
+    'PHP_SELF' => '/Users/alina/project/proposal/yii'
+    'SCRIPT_NAME' => '/Users/alina/project/proposal/yii'
+    'SCRIPT_FILENAME' => '/Users/alina/project/proposal/yii'
+    'PATH_TRANSLATED' => '/Users/alina/project/proposal/yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1526352099.3224
+    'REQUEST_TIME' => 1526352099
+    'argv' => [
+        0 => '/Users/alina/project/proposal/yii'
+        1 => 'questionnaire-statistics-cache/set-cache'
+        2 => 'vega'
+        3 => '1111123456'
+        4 => 'dev_token'
+    ]
+    'argc' => 5
+]
